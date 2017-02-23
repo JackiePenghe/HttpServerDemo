@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="308f01bdb1d57b165a7a25a9baf16c2e86a12b1a">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_1c33122ba8ae05389664959792eb261e099dab4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="H:\Android\studio_SDK\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_fcfcab0dc158b70d251eaa17a7c256c41de54d20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.2.0_0edcfad2b23a89b827c1f547cabe5cfa1734880d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.2.0_bff3c81f1641872fb698dc5f35e67582b8aa4bfc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.2.0_9b0de95d90f5cc2182ab318f2ee64c42bb7ddb00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jacke\.gradle\caches\modules-2\files-2.1\org.nanohttpd\nanohttpd\2.3.1\a8d54d1ca554a77f377eff6bf9e16ca8383c8f6c\nanohttpd-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8d54d1ca554a77f377eff6bf9e16ca8383c8f6c">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\nanohttpd-2.3.1_58c8b4988c2d80fce4101abaefcb2216de372be0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8dab4dda8ee20ebd2518e1b6745c2f8e06f1822a">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\instant-run_577fa0339ed0a76212e547ea3eb0e9d360749bbb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.2.0_3b7e6cf8f1ad229386b22a2f780e0be631ac529c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.2.0_edfb7b6d9929dee44864a6fbde4667bc0e974a95.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.2.0_9d5043126038d8fd4e8a2e7a098a2fe0f98eb4be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.2.0_b504e1ff5bb8efe6cf81ceb5d40468cf38ca0081.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.2.0_5514d87670bc26629c7fb34a8bfbd03d7fae3f6a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="E:\windows2\studioWorkSpace\TestHttpServer\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.2.0_58bc20a8a1a0d63261ce628b6e41ae5b0bc58811.jar" />
+    </item>
+
+</items>

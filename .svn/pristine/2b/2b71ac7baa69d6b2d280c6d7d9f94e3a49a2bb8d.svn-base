@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TestHttpServer</string>
+    <string name="hello">hello</string>
+    <string name="wipe_data">清空</string>
+    <string name="wipe_data_message">是否清空数据</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+</resources>

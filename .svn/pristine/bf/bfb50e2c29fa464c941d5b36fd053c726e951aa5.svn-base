@@ -1,0 +1,19 @@
+package cn.almsound.www.testhttpserver;
+
+import android.os.Binder;
+
+/**
+ * Created by jacke on 2017/2/21 0021.
+ */
+
+public class HttpServerServiceBinder extends Binder {
+    private HttpServerService httpServerService;
+
+    public HttpServerServiceBinder(HttpServerService httpServerService) {
+        this.httpServerService = httpServerService;
+    }
+
+    public HttpServerService getHttpServerService(){
+        return httpServerService;
+    }
+}

@@ -1,0 +1,157 @@
+package cn.almsound.www.testhttpserver;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.Socket;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+import javax.net.ssl.SSLServerSocketFactory;
+
+import cn.almsound.www.testhttpserver.utils.LogUtil;
+import fi.iki.elonen.NanoHTTPD;
+
+/**
+ * Created by jacke on 2017/2/21 0021.
+ */
+
+public class HttpServer extends NanoHTTPD {
+
+
+    public HttpServer(int port) {
+        super(port);
+    }
+
+    @Override
+    public Response serve(IHTTPSession session) {
+        Method method = session.getMethod();
+
+            /*我在这里做了一个限制，只接受POST请求。这个是项目需求。*/
+        if (method.equals(Method.POST)) {
+            Map<String, String> files = new HashMap<String, String>();
+            /*获取header信息，NanoHttp的header不仅仅是HTTP的header，还包括其他信息。*/
+            Map<String, String> header = session.getHeaders();
+
+            try {
+                /*这句尤为重要就是将将body的数据写入files中，大家可以看看parseBody具体实现，倒现在我也不明白为啥这样写。*/
+                session.parseBody(files);
+                /*看就是这里，POST请教的body数据可以完整读出*/
+                String body = session.getQueryParameterString();
+                LogUtil.w("header : " + header);
+                LogUtil.w("body : " + body);
+                /*这里是从header里面获取客户端的IP地址。NanoHttpd的header包含的东西不止是HTTP heaer的内容*/
+                header.get("http-client-ip");
+            } catch (IOException | ResponseException e) {
+                e.printStackTrace();
+            }
+            /*这里就是为客户端返回的信息了。我这里返回了一个200和一个HelloWorld*/
+            return newFixedLengthResponse(NanoHTTPD.Response.Status.OK, "text/html", "HelloWorld");
+        } else if (method.equals(Method.GET)) {
+            Map<String, List<String>> parameters = session.getParameters();
+            Set<Map.Entry<String, List<String>>> entries = parameters.entrySet();
+            StringBuilder stringBuilder = new StringBuilder();
+            for (Map.Entry<String, List<String>> next : entries) {
+                stringBuilder.append(next.getKey()).append("=").append(next.getValue()).append("\n");
+            }
+            String s = stringBuilder.toString();
+            LogUtil.w("HttpServer", "params = " + s);
+            return newFixedLengthResponse(s);
+        }
+        return super.serve(session);
+    }
+
+    @Override
+    public Response serve(String uri, Method method, Map<String, String> headers, Map<String, String> parms, Map<String, String> files) {
+        LogUtil.w("HttpServer","uri = " + uri);
+        return super.serve(uri, method, headers, parms, files);
+    }
+
+    @Override
+    public synchronized void closeAllConnections() {
+        super.closeAllConnections();
+    }
+
+    @Override
+    protected ClientHandler createClientHandler(Socket finalAccept, InputStream inputStream) {
+        return super.createClientHandler(finalAccept, inputStream);
+    }
+
+    @Override
+    protected ServerRunnable createServerRunnable(int timeout) {
+        return super.createServerRunnable(timeout);
+    }
+
+    @Override
+    protected boolean useGzipWhenAccepted(Response r) {
+        return super.useGzipWhenAccepted(r);
+    }
+
+    @Override
+    public ServerSocketFactory getServerSocketFactory() {
+        return super.getServerSocketFactory();
+    }
+
+    @Override
+    public void setServerSocketFactory(ServerSocketFactory serverSocketFactory) {
+        super.setServerSocketFactory(serverSocketFactory);
+    }
+
+    @Override
+    public String getHostname() {
+        return super.getHostname();
+    }
+
+    @Override
+    public TempFileManagerFactory getTempFileManagerFactory() {
+        return super.getTempFileManagerFactory();
+    }
+
+    @Override
+    public void makeSecure(SSLServerSocketFactory sslServerSocketFactory, String[] sslProtocols) {
+        super.makeSecure(sslServerSocketFactory, sslProtocols);
+    }
+
+    @Override
+    public void setAsyncRunner(AsyncRunner asyncRunner) {
+        super.setAsyncRunner(asyncRunner);
+    }
+
+    @Override
+    public void setTempFileManagerFactory(TempFileManagerFactory tempFileManagerFactory) {
+        super.setTempFileManagerFactory(tempFileManagerFactory);
+    }
+
+    @Override
+    public void start() throws IOException {
+        super.start();
+    }
+
+    @Override
+    public void start(int timeout) throws IOException {
+        super.start(timeout);
+    }
+
+    @Override
+    public void start(int timeout, boolean daemon) throws IOException {
+        super.start(timeout, daemon);
+    }
+
+    @Override
+    public void stop() {
+        super.stop();
+    }
+
+    public HttpServer(String hostname, int port) {
+        super(hostname, port);
+    }
+
+//    Map<String, List<String>> parameters = session.getParameters();
+//    Set<Map.Entry<String, List<String>>> entries = parameters.entrySet();
+//    StringBuilder stringBuilder =new StringBuilder();
+//    for (Map.Entry<String, List<String>> next : entries) {
+//        stringBuilder.append(next.getKey()).append("=").append(next.getValue()).append("\n");
+//    }
+//    return newFixedLengthResponse(stringBuilder.toString());
+}
